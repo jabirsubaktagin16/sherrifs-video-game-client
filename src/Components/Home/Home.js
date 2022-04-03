@@ -1,11 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import useReviews from "./../../CustomHook/useReviews";
+import Review from "./../Review/Review";
 
 const Home = () => {
+  const [reviews, setReviews] = useReviews();
   return (
     <section className="container my-5" id="top-banner">
       <div className="row d-flex align-items-center">
         <div className="col-lg-6 order-last order-lg-first">
-          <h1>
+          <h1 style={{ fontSize: "3.5rem" }}>
             Get your favorite games with{" "}
             <span className="green-text">Sherrif's Video Game.</span>
           </h1>
@@ -28,6 +32,19 @@ const Home = () => {
             alt="..."
           />
         </div>
+      </div>
+      <div className="my-5">
+        <h1 className="text-center">Customer Reviews</h1>
+        <div className="row row-cols-1 row-cols-md-3 g-5 my-2 px-5">
+          {reviews.slice(0, 3).map((review) => (
+            <Review review={review} key={review.id} />
+          ))}
+        </div>
+        <Link to="/reviews">
+          <div className="text-center my-5">
+            <button className="sherrif-button">Load More Reviews</button>
+          </div>
+        </Link>
       </div>
     </section>
   );

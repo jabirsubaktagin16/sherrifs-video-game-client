@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap");
+
+body {
+  font-family: "Old Standard TT", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", cursive;
+}
+
 .sherrif-button {
   cursor: pointer;
   transition: all 0.2s;
@@ -14,4 +29,8 @@
   background: transparent;
   color: #76c893;
   border: 1px solid #76c893;
+}
+
+.green-text {
+  color: #76c893;
 }

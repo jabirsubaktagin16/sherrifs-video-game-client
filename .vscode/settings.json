@@ -1,0 +1,64 @@
+{
+  "editor.fontLigatures": "'calt', 'ss01'",
+  "editor.fontSize": 18,
+  "editor.fontFamily": "'Operator Mono Lig', 'Cascadia Code', 'Dank Mono', Inconsolata, 'Courier New', mono",
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "storage.modifier", //static keyword
+          "support.class.builtin",
+          "keyword.control",
+          "constant.language",
+          "entity.other.attribute-name",
+          "string.quoted.single",
+          "entity.name.method",
+          "entity.name.tag"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.renderLineHighlight": "none",
+  "editor.hover.enabled": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+  "workbench.colorTheme": "Andromeda",
+  "git.ignoreLimitWarning": true,
+  "files.eol": "\n",
+  // config related to code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "workbench.preferredDarkColorTheme": "Monokai Classic",
+  "workbench.preferredHighContrastColorTheme": "Community Material Theme Lighter",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.codeActionsOnSaveTimeout": 100000,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSaveTimeout": 100000,
+  "editor.formatOnType": true,
+  "eslint.enable": true,
+  "html.format.enable": false,
+  "htmlhint.enable": true,
+  "prettier.requireConfig": false,
+  "prettier.useEditorConfig": true,
+  "stylelint.autoFixOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}

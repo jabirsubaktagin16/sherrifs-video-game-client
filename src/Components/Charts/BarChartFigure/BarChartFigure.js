@@ -20,8 +20,8 @@ const BarChartFigure = () => {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="investment" stackId="a" fill="#118ab2" />
-      <Bar dataKey="revenue" stackId="a" fill="#ef476f" />
+      <Bar dataKey="investment" stackId="a" fill="#5502bd" />
+      <Bar dataKey="revenue" stackId="a" fill="#e63946" />
     </BarChart>
   );
 };

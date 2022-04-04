@@ -6,7 +6,11 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <Link to="/" className="navbar-brand">
-          Navbar
+          <img
+            src={require("../../images/logo.png")}
+            alt=""
+            style={{ width: "50px" }}
+          />
         </Link>
         <button
           className="navbar-toggler"

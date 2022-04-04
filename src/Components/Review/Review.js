@@ -19,10 +19,7 @@ const Review = (props) => {
         </div>
 
         <div className="card-body d-flex flex-column">
-          <h5
-            className="card-title text-center"
-            style={{ color: "#4d908e", textTransform: "uppercase" }}
-          >
+          <h5 className="card-title text-center" style={{ color: "#E63946" }}>
             {name}
           </h5>
           <h6 className="text-center occupation">{occupation}</h6>
@@ -36,7 +33,7 @@ const Review = (props) => {
               readonly
             />
           </div>
-          <p className="card-text text-center">{description}</p>
+          <p className="card-text text-center mt-4">{description}</p>
         </div>
       </div>
     </div>

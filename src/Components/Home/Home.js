@@ -11,7 +11,7 @@ const Home = () => {
         <div className="col-lg-6 order-last order-lg-first">
           <h1 style={{ fontSize: "3.5rem" }}>
             Get your favorite games with{" "}
-            <span className="green-text">Sherrif's Video Game.</span>
+            <span className="red-text">Sherrif's Video Game.</span>
           </h1>
           <p>
             A video game or computer game is an electronic game that involves

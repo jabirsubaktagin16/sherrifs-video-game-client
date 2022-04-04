@@ -23,15 +23,15 @@ const StackedAreaChartFigure = () => {
         type="monotone"
         dataKey="investment"
         stackId="1"
-        stroke="#118ab2"
-        fill="#118ab2"
+        stroke="#5502bd"
+        fill="#5502bd"
       />
       <Area
         type="monotone"
         dataKey="revenue"
         stackId="1"
-        stroke="#ef476f"
-        fill="#ef476f"
+        stroke="#e63946"
+        fill="#e63946"
       />
     </AreaChart>
   );

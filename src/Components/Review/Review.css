@@ -1,7 +1,7 @@
 .card {
   border-radius: 0px;
-  background: #e0e0e0;
-  box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px #ffffff;
+  background: #e6e7ee;
+  box-shadow: inset 5px 5px 10px #adadb3, inset -5px -5px 10px #ffffff;
 }
 
 h5 {

@@ -23,10 +23,10 @@ const LineChartFigure = () => {
       <Line
         type="monotone"
         dataKey="investment"
-        stroke="#118ab2"
+        stroke="#5502bd"
         activeDot={{ r: 8 }}
       />
-      <Line type="monotone" dataKey="revenue" stroke="#ef476f" />
+      <Line type="monotone" dataKey="revenue" stroke="#e63946" />
     </LineChart>
   );
 };

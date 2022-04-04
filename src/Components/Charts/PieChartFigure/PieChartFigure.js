@@ -12,7 +12,7 @@ const PieChartFigure = () => {
         cx={250}
         cy={200}
         outerRadius={120}
-        fill="#ef476f"
+        fill="#e63946"
       />
       <Pie
         data={chartData}
@@ -21,7 +21,7 @@ const PieChartFigure = () => {
         cy={200}
         innerRadius={130}
         outerRadius={150}
-        fill="#118ab2"
+        fill="#5502bd"
         label
       />
     </PieChart>

@@ -2,7 +2,7 @@
 
 body {
   font-family: "Roboto", sans-serif !important;
-  background-color: #e0e0e0;
+  background-color: #e6e7ee;
 }
 
 h1,
@@ -23,16 +23,16 @@ h6 {
   color: #264653;
   font-size: 15px;
   border-radius: 0px;
-  background: #e0e0e0;
-  box-shadow: 5px 5px 10px #a8a8a8, -5px -5px 10px #ffffff;
+  background: #e6e7ee;
+  box-shadow: 5px 5px 10px #adadb3, -5px -5px 10px #ffffff;
 }
 
 .sherrif-button:hover {
   border-radius: 0px;
-  background: #e0e0e0;
-  box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px #ffffff;
+  background: #e6e7ee;
+  box-shadow: inset 5px 5px 10px #adadb3, inset -5px -5px 10px #ffffff;
 }
 
-.green-text {
-  color: #76c893;
+.red-text {
+  color: #e63946;
 }

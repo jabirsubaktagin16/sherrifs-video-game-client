@@ -6,8 +6,10 @@ const Reviews = () => {
   const [reviews, setReviews] = useReviews();
   return (
     <section className="container">
-      <h2 className="text-center">What Customers say about us</h2>
-      <div className="row row-cols-1 row-cols-md-3 g-5 my-2 px-5">
+      <h1 className="text-center" style={{ fontSize: "3.5rem" }}>
+        What Customers say about us
+      </h1>
+      <div className="row row-cols-1 row-cols-md-3 g-5 mb-4 px-5">
         {reviews.map((review) => (
           <Review review={review} key={review.id} />
         ))}

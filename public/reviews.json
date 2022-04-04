@@ -2,6 +2,7 @@
   {
     "id": "8d3e7a3a78704910998bb8efeef0ece0",
     "name": "Mae Walker",
+    "occupation": "Fashion Designer",
     "description": "I have downloaded several games from here. It is one of the best website for downloading video games",
     "rating": 4.5,
     "image": "https://i.ibb.co/jWskbkR/anthony-tran-VVVJ5-Juz-ADg-unsplash.jpg"
@@ -9,6 +10,7 @@
   {
     "id": "837c3a70ddcd4183807133e2fe733101",
     "name": "Darla Roy",
+    "occupation": "Model",
     "description": "All games were good except one game was not working properly.",
     "rating": 4.0,
     "image": "https://i.ibb.co/C1Dx4fg/behrouz-sasani-CDttl-HZKOr-U-unsplash.jpg"
@@ -16,6 +18,7 @@
   {
     "id": "915cdcedfe4e49de931f9ebf66d94609",
     "name": "Bert Webb",
+    "occupation": "Business Man",
     "description": "Trustworthy Website for downloading video games",
     "rating": 5.0,
     "image": "https://i.ibb.co/5xJxhdY/behrouz-sasani-c-En-Sr1-WRHUY-unsplash.jpg"
@@ -23,6 +26,7 @@
   {
     "id": "616fdfbffe2943ff809426901682e96f",
     "name": "Carlton Morris",
+    "occupation": "Student",
     "description": "Amazing Website for downloading Video games",
     "rating": 5.0,
     "image": "https://i.ibb.co/zn4b6pq/behrouz-sasani-m-AJKEgz2j-Q-unsplash.jpg"
@@ -30,6 +34,7 @@
   {
     "id": "19810290d05e4c618c1e3ed30b3ed3e5",
     "name": "Dallas Medina",
+    "occupation": "Game Developer",
     "description": "So far providing best service",
     "rating": 4.5,
     "image": "https://i.ibb.co/chYRbfK/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg"
@@ -37,6 +42,7 @@
   {
     "id": "68475b6bcf2d43f8b08b78398ec7434d",
     "name": "Wilbert Lynch",
+    "occupation": "Social Influencer",
     "description": "Not very much satisfied with the service",
     "rating": 2.0,
     "image": "https://i.ibb.co/d4rQsgp/kal-visuals-y-STd-W42-Y7og-unsplash.jpg"
@@ -44,6 +50,7 @@
   {
     "id": "a37ed183b1054343a1f85d1353f953e9",
     "name": "Janis Reed",
+    "occupation": "Model",
     "description": "This website is kinda very slow",
     "rating": 3.5,
     "image": "https://i.ibb.co/56QGcgw/nerf-portraits-UYCSOSSVSc-M-unsplash.jpg"
@@ -51,6 +58,7 @@
   {
     "id": "932289d865184ffe94d0e73d1c6fc0ed",
     "name": "Wilfred Waters",
+    "occupation": "Entreprenuer",
     "description": "Recommended for everyone, use this website to download your favorite video games",
     "rating": 4.5,
     "image": "https://i.ibb.co/1ntPmBR/sonny-mauricio-5-RKHxppj54-Y-unsplash.jpg"
@@ -58,6 +66,7 @@
   {
     "id": "683556b615e24910839ba51dd2fe71f9",
     "name": "Lucille Ross",
+    "occupation": "Graphics Designer",
     "description": "Great Website for video game lovers",
     "rating": 4.0,
     "image": "https://i.ibb.co/vDTc71m/sonny-mauricio-CTp-TK8q-Gkkg-unsplash.jpg"
@@ -65,6 +74,7 @@
   {
     "id": "11e03679710b4918b883f9f8babcbb58",
     "name": "Pete Bridges",
+    "occupation": "Civil Engineer",
     "description": "Website is cool but sometimes it becomes slow. Need to develop more",
     "rating": 3.5,
     "image": "https://i.ibb.co/KW3SL3W/usman-yousaf-6pm-G8-XIKE2w-unsplash.jpg"

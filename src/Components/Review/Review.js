@@ -1,29 +1,42 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Rating from "react-rating";
+import "./Review.css";
 
 const Review = (props) => {
   const { review } = props;
-  const { name, image, description, rating } = review;
+  const { name, occupation, image, description, rating } = review;
   return (
     <div className="col">
-      <div className="card h-100 border-0 shadow">
-        <img src={image} className="img-fluid" alt="..." />
-        <div className="card-body p-3 d-flex flex-column">
+      <div className="card h-100 border-0 p-3">
+        <div className="text-center">
+          <img
+            src={image}
+            className="img-fluid rounded-circle w-75"
+            alt="..."
+          />
+        </div>
+
+        <div className="card-body d-flex flex-column">
           <h5
             className="card-title text-center"
             style={{ color: "#4d908e", textTransform: "uppercase" }}
           >
             {name}
           </h5>
-          <p className="card-text text-center">{description}</p>
-          <div className="d-flex justify-content-between mt-auto">
-            <h6>Rating</h6>
-            <h6>
-              <FontAwesomeIcon icon={faStar} style={{ color: "#f9c74f" }} />{" "}
-              {rating.toFixed(1)}
-            </h6>
+          <h6 className="text-center occupation">{occupation}</h6>
+          <div className="text-center">
+            <Rating
+              initialRating={rating}
+              emptySymbol={<FontAwesomeIcon icon={faStar} />}
+              fullSymbol={
+                <FontAwesomeIcon style={{ color: "goldenrod" }} icon={faStar} />
+              }
+              readonly
+            />
           </div>
+          <p className="card-text text-center">{description}</p>
         </div>
       </div>
     </div>

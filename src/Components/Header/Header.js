@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
-        <Link to="#" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           Navbar
         </Link>
         <button

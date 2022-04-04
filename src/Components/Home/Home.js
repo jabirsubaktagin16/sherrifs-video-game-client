@@ -40,11 +40,12 @@ const Home = () => {
             <Review review={review} key={review.id} />
           ))}
         </div>
-        <Link to="/reviews">
-          <div className="text-center my-5">
+
+        <div className="text-center my-5 d-grid gap-2 d-md-block">
+          <Link to="/reviews">
             <button className="sherrif-button">Load More Reviews</button>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </section>
   );

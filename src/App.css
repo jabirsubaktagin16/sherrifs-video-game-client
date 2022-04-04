@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
 
 body {
-  font-family: "Old Standard TT", serif;
+  font-family: "Roboto", sans-serif !important;
+  background-color: #e0e0e0;
 }
 
 h1,
@@ -14,21 +15,22 @@ h6 {
 }
 
 .sherrif-button {
+  border: 0;
   cursor: pointer;
   transition: all 0.2s;
   font-weight: 500;
   padding: 10px 30px;
-  border-radius: 10px;
-  background: #76c893;
-  color: white;
-  border: 1px solid transparent;
+  color: #264653;
   font-size: 15px;
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #a8a8a8, -5px -5px 10px #ffffff;
 }
 
 .sherrif-button:hover {
-  background: transparent;
-  color: #76c893;
-  border: 1px solid #76c893;
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #a8a8a8, inset -5px -5px 10px #ffffff;
 }
 
 .green-text {

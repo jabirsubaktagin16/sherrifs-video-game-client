@@ -7,7 +7,7 @@ const LineChartFigure = () => {
   return (
     <LineChart
       width={500}
-      height={300}
+      height={400}
       data={chartData}
       margin={{
         top: 5,
@@ -22,11 +22,11 @@ const LineChartFigure = () => {
       <Legend />
       <Line
         type="monotone"
-        dataKey="sell"
-        stroke="#8884d8"
+        dataKey="investment"
+        stroke="#118ab2"
         activeDot={{ r: 8 }}
       />
-      <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="revenue" stroke="#ef476f" />
     </LineChart>
   );
 };

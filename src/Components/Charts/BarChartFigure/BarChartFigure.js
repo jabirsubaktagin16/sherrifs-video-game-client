@@ -7,10 +7,10 @@ const BarChartFigure = () => {
   return (
     <BarChart
       width={500}
-      height={300}
+      height={400}
       data={chartData}
       margin={{
-        top: 5,
+        top: 20,
         right: 30,
         left: 20,
         bottom: 5,
@@ -20,8 +20,8 @@ const BarChartFigure = () => {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="sell" fill="#8884d8" />
-      <Bar dataKey="revenue" fill="#82ca9d" />
+      <Bar dataKey="investment" stackId="a" fill="#118ab2" />
+      <Bar dataKey="revenue" stackId="a" fill="#ef476f" />
     </BarChart>
   );
 };

@@ -1,11 +1,9 @@
-import { curveCardinal } from "d3-shape";
 import React from "react";
 import { Area, AreaChart, Tooltip, XAxis, YAxis } from "recharts";
-import useChart from "./../../../CustomHook/useChart";
+import useChart from "../../../CustomHook/useChart";
 
-const CardinalAreaChartFigure = () => {
+const StackedAreaChartFigure = () => {
   const [chartData, setChartData] = useChart();
-  const cardinal = curveCardinal.tension(0.2);
   return (
     <AreaChart
       width={500}
@@ -13,8 +11,8 @@ const CardinalAreaChartFigure = () => {
       data={chartData}
       margin={{
         top: 5,
-        right: 30,
-        left: 20,
+        right: 20,
+        left: 30,
         bottom: 5,
       }}
     >
@@ -24,19 +22,19 @@ const CardinalAreaChartFigure = () => {
       <Area
         type="monotone"
         dataKey="investment"
+        stackId="1"
         stroke="#118ab2"
         fill="#118ab2"
-        fillOpacity={0.3}
       />
       <Area
-        type={cardinal}
+        type="monotone"
         dataKey="revenue"
+        stackId="1"
         stroke="#ef476f"
         fill="#ef476f"
-        fillOpacity={0.3}
       />
     </AreaChart>
   );
 };
 
-export default CardinalAreaChartFigure;
+export default StackedAreaChartFigure;

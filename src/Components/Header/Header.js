@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CustomLink from "./../CustomLink/CustomLink";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -26,29 +28,24 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <CustomLink className="nav-link" to="/">
                 Home
-              </Link>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/reviews">
+              <CustomLink className="nav-link" to="/reviews">
                 Reviews
-              </Link>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/dashboard">
+              <CustomLink className="nav-link" to="/dashboard">
                 Dashboard
-              </Link>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blogs">
+              <CustomLink className="nav-link" to="/blogs">
                 Blogs
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                About
-              </Link>
+              </CustomLink>
             </li>
           </ul>
         </div>

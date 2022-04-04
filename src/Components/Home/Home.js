@@ -6,7 +6,7 @@ import Review from "./../Review/Review";
 const Home = () => {
   const [reviews, setReviews] = useReviews();
   return (
-    <section className="container my-5" id="top-banner">
+    <section className="container" id="top-banner">
       <div className="row d-flex align-items-center">
         <div className="col-lg-6 order-last order-lg-first">
           <h1 style={{ fontSize: "3.5rem" }}>

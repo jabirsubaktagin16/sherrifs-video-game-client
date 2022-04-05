@@ -11,7 +11,7 @@ const Dashboard = () => {
       <h1 className="text-center" style={{ fontSize: "3.5rem" }}>
         Dashboard
       </h1>
-      <div className="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-5 mb-2 px-5">
+      <div className="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-5 mb-5">
         <div className="col">
           <div className="chart p-3 h-100">
             <h2 className="text-center">Bar Chart</h2>

@@ -13,7 +13,7 @@ const Review = (props) => {
         <div className="text-center">
           <img
             src={image}
-            className="img-fluid rounded-circle w-75"
+            className="card-img-top img-circle rounded-circle w-50"
             alt="..."
           />
         </div>

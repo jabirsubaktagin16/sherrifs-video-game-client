@@ -8,33 +8,27 @@ const Review = (props) => {
   const { review } = props;
   const { name, occupation, image, description, rating } = review;
   return (
-    <div className="col">
-      <div className="card h-100 border-0 p-3">
+    <div className="card h-100 border-0 p-3">
+      <div className="text-center">
+        <img src={image} className="img-circle rounded-circle w-50" alt="..." />
+      </div>
+
+      <div className="card-body d-flex flex-column">
+        <h5 className="card-title text-center" style={{ color: "#E63946" }}>
+          {name}
+        </h5>
+        <h6 className="text-center occupation">{occupation}</h6>
         <div className="text-center">
-          <img
-            src={image}
-            className="card-img-top img-circle rounded-circle w-50"
-            alt="..."
+          <Rating
+            initialRating={rating}
+            emptySymbol={<FontAwesomeIcon icon={faStar} />}
+            fullSymbol={
+              <FontAwesomeIcon style={{ color: "goldenrod" }} icon={faStar} />
+            }
+            readonly
           />
         </div>
-
-        <div className="card-body d-flex flex-column">
-          <h5 className="card-title text-center" style={{ color: "#E63946" }}>
-            {name}
-          </h5>
-          <h6 className="text-center occupation">{occupation}</h6>
-          <div className="text-center">
-            <Rating
-              initialRating={rating}
-              emptySymbol={<FontAwesomeIcon icon={faStar} />}
-              fullSymbol={
-                <FontAwesomeIcon style={{ color: "goldenrod" }} icon={faStar} />
-              }
-              readonly
-            />
-          </div>
-          <p className="card-text text-center mt-4">{description}</p>
-        </div>
+        <p className="card-text text-center mt-4">{description}</p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import onlineGames from "../../../images/online-games.png";
+import onlineGames from "../../images/online-games.png";
 
 const Banner = () => {
   return (

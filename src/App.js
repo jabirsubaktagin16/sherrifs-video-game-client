@@ -11,7 +11,6 @@ import Header from "./Components/Shared/Header/Header";
 import NotFound from "./Components/Shared/NotFound/NotFound";
 
 function App() {
-  console.log(process.env.REACT_APP_APIKEY);
   return (
     <div className="App">
       <Header />

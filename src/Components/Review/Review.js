@@ -2,16 +2,14 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Rating from "react-rating";
-import "./Review.css";
+import styles from "./Review.module.css";
 
 const Review = (props) => {
   const { review } = props;
   const { name, occupation, image, description, rating } = review;
   return (
-    <div className="card h-100 border-0 p-3">
-      <div className="text-center">
-        <img src={image} className="img-circle rounded-circle w-50" alt="..." />
-      </div>
+    <div className={styles.card}>
+      <img src={image} className={styles.imgDiv} alt="..." />
 
       <div className="card-body d-flex flex-column">
         <h5 className="card-title text-center" style={{ color: "#E63946" }}>

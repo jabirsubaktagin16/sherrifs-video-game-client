@@ -7,6 +7,7 @@ import {
 } from "react-firebase-hooks/auth";
 import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
+import useToken from "./../../../CustomHook/useToken";
 import auth from "./../../../firebase.init";
 
 const SocialLogin = () => {
@@ -20,6 +21,8 @@ const SocialLogin = () => {
 
   const location = useLocation();
 
+  const [token] = useToken(googleUser || githubUser);
+
   let from = location.state?.from?.pathname || "/";
 
   if (googleError || githubError)
@@ -28,8 +31,8 @@ const SocialLogin = () => {
   // if (googleLoading || githubLoading) return <Loading />;
 
   useEffect(() => {
-    if (googleUser || githubUser) navigate(from, { replace: true });
-  }, [googleUser, githubUser, navigate, from]);
+    if (token) navigate(from, { replace: true });
+  }, [token, navigate, from]);
 
   return (
     <div className="d-flex text-center justify-content-center mt-2 gap-4">

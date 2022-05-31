@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Blogs from "./Components/Blogs/Blogs";
 import Dashboard from "./Components/Dashboard/Dashboard";
+import GameDetails from "./Components/Games/GameDetails/GameDetails";
 import Games from "./Components/Games/Games";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login/Login";
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/games" element={<Games />} />
+        <Route path="/game/:id" element={<GameDetails />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />

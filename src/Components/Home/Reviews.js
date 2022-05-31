@@ -1,10 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
+import Loading from "../Shared/Loading/Loading";
 import useReviews from "./../../CustomHook/useReviews";
 import Review from "./../Review/Review";
 
 const Reviews = () => {
-  const [reviews, setReviews] = useReviews();
+  const { reviews, isLoading } = useReviews();
   let settings = {
     dots: true,
     infinite: true,
@@ -41,13 +42,15 @@ const Reviews = () => {
     ],
   };
 
+  if (isLoading) return <Loading />;
+
   return (
     <div className="my-5">
       <h1 className="text-center">What Customers Say About Us</h1>
       <Slider {...settings}>
         {reviews.map((review) => (
-          <div className="g-5 px-4">
-            <Review review={review} key={review._id} />
+          <div className="g-5 px-4" key={review._id}>
+            <Review review={review} />
           </div>
         ))}
       </Slider>

@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useQuery } from "react-query";
 
 const useReviews = () => {
-  const [reviews, setReviews] = useState([]);
-  useEffect(() => {
-    fetch("https://pure-plains-35264.herokuapp.com/reviews")
-      .then((res) => res.json())
-      .then((data) => setReviews(data));
-  }, []);
-  return [reviews, setReviews];
+  const { data: reviews, isLoading } = useQuery("reviews", () =>
+    fetch("https://pure-plains-35264.herokuapp.com/reviews").then((res) =>
+      res.json()
+    )
+  );
+
+  return { reviews, isLoading };
 };
 
 export default useReviews;

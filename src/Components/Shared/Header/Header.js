@@ -1,7 +1,7 @@
 import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import logo from "../../../images/logo.png";
 import CustomLink from "./../CustomLink/CustomLink";
@@ -9,8 +9,13 @@ import "./Header.css";
 
 const Header = () => {
   const [user, loading, error] = useAuthState(auth);
+  const navigate = useNavigate();
 
-  const handleSignOut = () => signOut(auth);
+  const handleSignOut = () => {
+    localStorage.removeItem("accessToken");
+    navigate("/login");
+    signOut(auth);
+  };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light">

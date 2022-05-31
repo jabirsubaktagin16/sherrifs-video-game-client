@@ -37,8 +37,8 @@ const Header = () => {
               </CustomLink>
             </li>
             <li className="nav-item">
-              <CustomLink className="nav-link" to="/reviews">
-                Reviews
+              <CustomLink className="nav-link" to="/games">
+                Games
               </CustomLink>
             </li>
             <li className="nav-item">

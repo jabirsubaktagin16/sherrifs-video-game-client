@@ -77,22 +77,24 @@ const Login = () => {
       <div className="text-center mt-4 name">Login Form</div>
       <form onSubmit={handleSubmit(onSubmit)} className="p-3 mt-3">
         {/* Email Input Field */}
-        <div className="form-field d-flex align-items-center">
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="input input-bordered"
-            {...register("email", {
-              required: {
-                value: true,
-                message: "Email is required",
-              },
-              pattern: {
-                value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                message: "Provide a valid email",
-              },
-            })}
-          />
+        <div>
+          <div className="form-field d-flex align-items-center">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="input input-bordered"
+              {...register("email", {
+                required: {
+                  value: true,
+                  message: "Email is required",
+                },
+                pattern: {
+                  value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                  message: "Provide a valid email",
+                },
+              })}
+            />
+          </div>
           <label className="label">
             {errors.email?.type === "required" && (
               <span className="label-text-alt text-red-500">
@@ -107,22 +109,24 @@ const Login = () => {
           </label>
         </div>
         {/* Password Input Field */}
-        <div className="form-field d-flex align-items-center">
-          <input
-            type="password"
-            placeholder="Your Password"
-            className="input input-bordered"
-            {...register("password", {
-              required: {
-                value: true,
-                message: "Password is required",
-              },
-              minLength: {
-                value: 6,
-                message: "Must be 6 characters or longer",
-              },
-            })}
-          />
+        <div>
+          <div className="form-field d-flex align-items-center">
+            <input
+              type="password"
+              placeholder="Your Password"
+              className="input input-bordered"
+              {...register("password", {
+                required: {
+                  value: true,
+                  message: "Password is required",
+                },
+                minLength: {
+                  value: 6,
+                  message: "Must be 6 characters or longer",
+                },
+              })}
+            />
+          </div>
           <label className="label">
             {errors.password?.type === "required" && (
               <span className="text-error">{errors.password.message}</span>

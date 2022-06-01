@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BuyNowBtn from "../../Shared/BuyNowBtn/BuyNowBtn";
 import styles from "./Game.module.css";
 
 const Game = ({ game }) => {
-  const { _id, name, img, price, description, category } = game;
+  const { _id, name, img, price, description } = game;
   return (
     <div className="col">
       <div className={styles.card}>
@@ -28,9 +29,7 @@ const Game = ({ game }) => {
               ...Read More
             </Link>
           </p>
-          <button className={styles.buyNow} type="button">
-            Buy Now
-          </button>
+          <BuyNowBtn id={_id} />
         </div>
       </div>
     </div>

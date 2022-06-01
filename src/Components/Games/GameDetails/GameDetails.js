@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import BuyNowBtn from "../../Shared/BuyNowBtn/BuyNowBtn";
 import Footer from "../../Shared/Footer/Footer";
 import useGameDetails from "./../../../CustomHook/useGameDetails";
 import GameBanner from "./GameBanner/GameBanner";
@@ -9,7 +10,7 @@ const GameDetails = () => {
   const { id } = useParams();
   const [game] = useGameDetails(id);
 
-  const { name, img, price, category, description } = game;
+  const { _id, name, img, price, category, description } = game;
 
   return (
     <>
@@ -31,11 +32,7 @@ const GameDetails = () => {
                 <h5>Price</h5>
                 <h5>${price}</h5>
               </div>
-              <div className="d-grid gap-2 ">
-                <button className="buyNow" type="button">
-                  Buy Now
-                </button>
-              </div>
+              <BuyNowBtn id={_id} />
             </div>
           </div>
         </div>

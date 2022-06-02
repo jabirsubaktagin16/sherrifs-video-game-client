@@ -14,7 +14,7 @@ const CheckOutForm = ({ singleOrder }) => {
   const { _id, price, customer, customerName } = singleOrder;
 
   useEffect(() => {
-    fetch("http://localhost:5000/create-payment-intent", {
+    fetch("https://pure-plains-35264.herokuapp.com/create-payment-intent", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -77,7 +77,7 @@ const CheckOutForm = ({ singleOrder }) => {
         order: _id,
         transactionId: paymentIntent.id,
       };
-      fetch(`http://localhost:5000/order/${_id}`, {
+      fetch(`https://pure-plains-35264.herokuapp.com/order/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",
@@ -121,11 +121,11 @@ const CheckOutForm = ({ singleOrder }) => {
       </form>
       {cardError && <p className="text-red-500">{cardError}</p>}
       {success && (
-        <div className="text-green-500">
+        <div className="text-success">
           <p>{success} </p>
           <p>
             Your transaction Id:{" "}
-            <span className="text-orange-500 font-bold">{transactionId}</span>{" "}
+            <span className="text-info font-bold">{transactionId}</span>{" "}
           </p>
         </div>
       )}

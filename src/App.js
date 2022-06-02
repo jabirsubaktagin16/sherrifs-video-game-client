@@ -9,6 +9,7 @@ import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login/Login";
 import RequireAuth from "./Components/Login/RequireAuth/RequireAuth";
 import SignUp from "./Components/Login/SignUp/SignUp";
+import MyProfile from "./Components/MyProfile/MyProfile";
 import Payment from "./Components/Payment/Payment";
 import Purchase from "./Components/Purchase/Purchase";
 import Header from "./Components/Shared/Header/Header";
@@ -38,6 +39,14 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route
+          path="/profile"
+          element={
+            <RequireAuth>
+              <MyProfile />
+            </RequireAuth>
+          }
+        />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { toast } from "react-hot-toast";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useGameDetails from "./../../CustomHook/useGameDetails";
 import auth from "./../../firebase.init";
 
@@ -9,6 +9,7 @@ const Purchase = () => {
   const [user, loading, error] = useAuthState(auth);
   const { id } = useParams();
   const [game] = useGameDetails(id);
+  const navigate = useNavigate();
 
   const handleOrder = (event) => {
     event.preventDefault();
@@ -21,7 +22,7 @@ const Purchase = () => {
       contactNo: event.target.customerContact.value,
     };
 
-    fetch("http://localhost:5000/order", {
+    fetch("https://pure-plains-35264.herokuapp.com/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -31,6 +32,7 @@ const Purchase = () => {
       .then((res) => res.json())
       .then((data) => {
         toast.success(`Your Order for ${game.name} is Confirmed`);
+        navigate("/");
       });
   };
 

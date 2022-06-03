@@ -4,7 +4,11 @@ const useToken = (user) => {
   const [token, setToken] = useState("");
   useEffect(() => {
     const email = user?.user?.email;
-    const currentUser = { email: email };
+    const name = user?.user?.displayName;
+    const img =
+      user?.user?.photoURL ||
+      "https://i.ibb.co/N7bsG2y/blank-profile-picture-973460-1280.webp";
+    const currentUser = { name: name, email: email, img: img };
     if (email) {
       fetch(`https://pure-plains-35264.herokuapp.com/user/${email}`, {
         method: "PUT",

@@ -61,6 +61,7 @@ const CancelConfirmationModal = ({
               onClick={() => handleDelete()}
               type="button"
               className="btn btn-danger"
+              data-bs-dismiss="modal"
             >
               Confirm
             </button>

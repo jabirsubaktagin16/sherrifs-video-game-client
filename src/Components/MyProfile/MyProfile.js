@@ -1,5 +1,7 @@
 import React from "react";
 import Footer from "../Shared/Footer/Footer";
+import AddReview from "./AddReview/AddReview";
+import FavouriteGames from "./FavouriteGames";
 import MyOrders from "./MyOrders/MyOrders";
 import ProfileCard from "./ProfileCard/ProfileCard";
 
@@ -12,7 +14,9 @@ const MyProfile = () => {
             <ProfileCard />
           </div>
           <div className="col-md-8">
+            <FavouriteGames />
             <MyOrders />
+            <AddReview />
           </div>
         </div>
       </div>

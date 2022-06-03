@@ -4,6 +4,7 @@ import {
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../images/logo.png";
 import Loading from "../../Shared/Loading/Loading";
@@ -43,7 +44,7 @@ const SignUp = () => {
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name });
-    console.log("Update Done");
+    toast.success("Update Done");
   };
 
   if (token) navigate("/");

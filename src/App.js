@@ -10,6 +10,7 @@ import Login from "./Components/Login/Login/Login";
 import RequireAuth from "./Components/Login/RequireAuth/RequireAuth";
 import SignUp from "./Components/Login/SignUp/SignUp";
 import MyProfile from "./Components/MyProfile/MyProfile";
+import UpdateProfile from "./Components/MyProfile/UpdateProfile/UpdateProfile";
 import Payment from "./Components/Payment/Payment";
 import Purchase from "./Components/Purchase/Purchase";
 import Header from "./Components/Shared/Header/Header";
@@ -40,10 +41,18 @@ function App() {
           }
         ></Route>
         <Route
-          path="/profile"
+          path="profile"
           element={
             <RequireAuth>
               <MyProfile />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="updateProfile/:id"
+          element={
+            <RequireAuth>
+              <UpdateProfile />
             </RequireAuth>
           }
         />

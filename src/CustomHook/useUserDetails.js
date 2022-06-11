@@ -4,11 +4,8 @@ const useUserDetails = (email) => {
   const [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${email}`, {
+    fetch(`https://pure-plains-35264.herokuapp.com/user/${email}`, {
       method: "GET",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
     })
       .then((res) => res.json())
       .then((data) => setCurrentUser(data));

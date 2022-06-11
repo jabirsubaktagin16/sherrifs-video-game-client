@@ -19,33 +19,30 @@ const ProfileCard = () => {
   const handleUpdateProfile = (id) => navigate(`/updateProfile/${id}`);
 
   return (
-    <div className={styles.profileCard3}>
-      <div className={styles.backgroundBlock}>
-        <img
-          src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          alt="profile-sample1"
-          className={styles.background}
-        />
-      </div>
-      <div className="profileThumbBlock">
-        <img src={img} alt="profileImage" className={styles.profile} />
-      </div>
-      <div className={styles.cardContent}>
-        <h2>
-          {!name && <span>{user?.displayName}</span>}
-          {name && <span>{name}</span>}
-          <small>
-            {!occupation && (
-              <span className="text-danger">
-                You have not added occupation yet
-              </span>
-            )}
-          </small>
-        </h2>
-        <div className={styles.iconBlock}>
-          <p>
-            <strong>Contact No:</strong>
-          </p>
+    <>
+      <div className={styles.profileCard3}>
+        <div className={styles.backgroundBlock}>
+          <img
+            src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="profile-sample1"
+            className={styles.background}
+          />
+        </div>
+        <div className="profileThumbBlock">
+          <img src={img} alt="profileImage" className={styles.profile} />
+        </div>
+        <div className={styles.cardContent}>
+          <h2>
+            {!name && <span>{user?.displayName}</span>}
+            {name && <span>{name}</span>}
+            <small>
+              {!occupation && (
+                <span className="text-danger">
+                  You have not added occupation yet
+                </span>
+              )}
+            </small>
+          </h2>
           <button
             onClick={() => handleUpdateProfile(_id)}
             className={styles.editBtn}
@@ -54,7 +51,7 @@ const ProfileCard = () => {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { toast } from "react-hot-toast";
 import Rating from "react-rating";
@@ -21,7 +21,7 @@ const AddReview = () => {
       description: reviewRef.current.value,
     };
 
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://pure-plains-35264.herokuapp.com/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",

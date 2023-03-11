@@ -2,7 +2,7 @@ import { useQuery } from "react-query";
 
 const useReviews = () => {
   const { data: reviews, isLoading } = useQuery("reviews", () =>
-    fetch("https://pure-plains-35264.herokuapp.com/reviews").then((res) =>
+    fetch("https://sherrifs-video-game-server.onrender.com/reviews").then((res) =>
       res.json()
     )
   );

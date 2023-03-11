@@ -10,7 +10,7 @@ const useToken = (user) => {
       "https://i.ibb.co/N7bsG2y/blank-profile-picture-973460-1280.webp";
     const currentUser = { name: name, email: email, img: img };
     if (email) {
-      fetch(`https://pure-plains-35264.herokuapp.com/user/${email}`, {
+      fetch(`https://sherrifs-video-game-server.onrender.com/user/${email}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

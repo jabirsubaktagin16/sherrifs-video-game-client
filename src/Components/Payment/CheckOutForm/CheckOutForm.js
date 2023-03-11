@@ -14,7 +14,7 @@ const CheckOutForm = ({ singleOrder }) => {
   const { _id, price, customer, customerName } = singleOrder;
 
   useEffect(() => {
-    fetch("https://pure-plains-35264.herokuapp.com/create-payment-intent", {
+    fetch("https://sherrifs-video-game-server.onrender.com/create-payment-intent", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -77,7 +77,7 @@ const CheckOutForm = ({ singleOrder }) => {
         order: _id,
         transactionId: paymentIntent.id,
       };
-      fetch(`https://pure-plains-35264.herokuapp.com/order/${_id}`, {
+      fetch(`https://sherrifs-video-game-server.onrender.com/order/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

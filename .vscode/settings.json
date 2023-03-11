@@ -27,7 +27,7 @@
   },
   "editor.renderLineHighlight": "none",
   "editor.hover.enabled": true,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
   "workbench.colorTheme": "Andromeda",
   "git.ignoreLimitWarning": true,

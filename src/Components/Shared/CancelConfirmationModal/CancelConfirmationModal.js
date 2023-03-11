@@ -9,7 +9,7 @@ const CancelConfirmationModal = ({
   const { gameName, _id } = deletingOrder;
 
   const handleDelete = () => {
-    fetch(`https://pure-plains-35264.herokuapp.com/order/${_id}`, {
+    fetch(`https://sherrifs-video-game-server.onrender.com/order/${_id}`, {
       method: "DELETE",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

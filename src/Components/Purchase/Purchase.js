@@ -22,7 +22,7 @@ const Purchase = () => {
       contactNo: event.target.customerContact.value,
     };
 
-    fetch("https://pure-plains-35264.herokuapp.com/order", {
+    fetch("https://sherrifs-video-game-server.onrender.com/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

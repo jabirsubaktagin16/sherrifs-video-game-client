@@ -46,7 +46,7 @@ const UpdateProfile = () => {
             favouriteGames: data.favouriteGames,
           };
           // send to your database
-          fetch(`https://pure-plains-35264.herokuapp.com/user/${id}`, {
+          fetch(`https://sherrifs-video-game-server.onrender.com/user/${id}`, {
             method: "PATCH",
             headers: {
               "content-type": "application/json",

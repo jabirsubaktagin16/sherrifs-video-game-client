@@ -4,7 +4,7 @@ const useUserDetails = (email) => {
   const [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
-    fetch(`https://pure-plains-35264.herokuapp.com/user/${email}`, {
+    fetch(`https://sherrifs-video-game-server.onrender.com/user/${email}`, {
       method: "GET",
     })
       .then((res) => res.json())

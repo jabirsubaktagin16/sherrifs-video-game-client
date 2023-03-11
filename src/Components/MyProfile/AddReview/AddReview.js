@@ -21,7 +21,7 @@ const AddReview = () => {
       description: reviewRef.current.value,
     };
 
-    fetch("https://pure-plains-35264.herokuapp.com/reviews", {
+    fetch("https://sherrifs-video-game-server.onrender.com/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
